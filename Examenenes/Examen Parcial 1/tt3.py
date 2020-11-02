@@ -1,0 +1,36 @@
+km=float(input())
+tipo=int(input())
+tarifa=(input())
+while(km>=0):
+    if(tipo==1):
+        if(tarifa=="a"):
+           din=int(input())
+           uber=7*din
+        elif(tarifa=="b"):
+            din=1
+            uber=7
+    elif(tipo==2):
+         if(tarifa=="a"):
+           din=int(input())
+           uber=12.26*din
+         elif(tarifa=="b"):
+            uber=12.26
+    elif(tipo==3):
+         if(tarifa=="a"):
+           din=int(input())
+           uber=16.52*din
+         elif(tarifa=="b"):
+            din=1
+            uber=16.52
+    elif(tipo==4):
+         if(tarifa=="a"):
+           din=int(input())
+           uber=22.72*din
+         elif(tarifa=="b"):
+            din=1
+            uber=22.72
+    print(km*uber)
+    print()
+    km=float(input())
+    tipo=int(input())
+    tarifa=(input())
